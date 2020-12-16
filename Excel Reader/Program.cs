@@ -12,7 +12,7 @@ namespace Excel_Reader
     {
         static void Main(string[] args)
         {
-            const string fileName = @"C:\Users\javad\Desktop\accounts.xlsx";
+            const string fileName = @"";
             StreamReader streamReader = new StreamReader(fileName);
             using (var excel = new ExcelPackage(streamReader.BaseStream))
             {
