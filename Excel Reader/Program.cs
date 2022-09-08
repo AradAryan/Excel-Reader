@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace Excel_Reader
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
-            const string fileName = @"";
+            const string fileName = @"C:\Users\javad\Desktop\accounts.xlsx";
+            var result = Excel.ReadFile(fileName);
+            result.Count();
+            #region comment
+            /*
+            const string fileName = @"C:\Users\javad\Desktop\accounts.xlsx";
             StreamReader streamReader = new StreamReader(fileName);
             using (var excel = new ExcelPackage(streamReader.BaseStream))
             {
@@ -30,6 +35,8 @@ namespace Excel_Reader
                     }
                 }
             }
+            */
+            #endregion
         }
     }
 }
